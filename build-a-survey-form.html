@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Physics Survey Form</title>
+    <link rel="stylesheets" href="styles.css"/>
+  </head>
+  <body>
+    <div class="form">
+      <section>
+        <h1 id="title">Physics Survey Form</h1>
+        <p id="description" class="description">Thank you for taking your time to go through my website</p>
+      </section>
+      <section>
+        <form id="survey-form">
+          <label for="name" id="name-label" class="label">Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name" class="input" required/>
+          <label for="email" id="email-label" class="label">Email</label>
+          <input type="email" id="email" placeholder="Enter Your Email" class="input" required/>
+          <label for="number" id="number-label" class="label">Age</label>
+          <input type="number" id="number" min="8" max="80" placeholder="Age" class="input" required/>
+          <p class="select">Do You Love Physics?</p>
+          <select id="dropdown">
+            <option>How much do you love physics?</option>
+            <option>Of Course...Is That Even A Qustion!?</option>
+            <option>Yes...Very Much</option>
+            <option>I Do But Not That Much</option>
+            <option>I Don't Like Physics At All</option>
+            <option>I Hate Physics</option>
+          </select>
+          <p class="radio">What Is Your Gender?</p>
+          <label for="male" class="radio"><input type="radio" id="male" name="my-gender" value="male"  checked />Male</label>
+          <label for="female" class="radio"><input type="radio" id="female" name="my-gender" value="female"/>Female</label>
+          <label for="rather-not-say" class="rather-not-say"><input type="radio" id="rather-not-say" name="my-gender" value="rather-not-say"  class="rather-not-say">Rather Not Say</label>
+          <p class="select">Which Physics Field Do You Prefer?</p>
+          <select id="dropdown">
+            <option>Select Field</option>
+            <option>Astronomy And Astrophysics</option>
+            <option>Quantum Physics</option>
+            <option>Theoretical Physics</option>
+            <option>Classical Mechanics</option>
+            <option>Other</option>
+          </select>
+          <p class="checkbox">According To You Who Is The Greatest Physicist Of All Time? (check more than one)</p>
+          <label for="physicist1" class="checkbox"><input type="checkbox" id="physicist1" name="physicist1" value="Einstein"/>Albert Einstein</label>
+          <label for="physicist2" class="checkbox"><input type="checkbox" id="physicist2" name-"physicist2" value="Tesla">Nikola Tesla</label>
+          <label for="physicist3" class="checkbox"><input type="checkbox" id="physicist3" name="physicist3" value="Edisson">Thomas Edisson</label>
+          <label for="physicist4" class="checkbox"><input type="checkbox" id="physicist4" name="physicist4" value="Newton">Isaac Newton</label>
+          <label for="physicist5" class="checkbox"><input type="checkbox" id="physicist5" name="physicist5" value="Feyman">Richard Feynman</label>
+          <label for="physicist6" class="checkbox"><input type="checkbox" id="physicist6" name="physicist6" value="Galileo">Galileo Galilei</label>
+         <label for="physicist7" class="checkbox"><input type="checkbox" id="physicist7" name="physicist7" value="Bohr">Niels Bohr</label>
+          <label for="physicist8" class="checkbox"><input type="checkbox" id="physicist8" name="physicist8" value="Paul">Paul Dirac</label>
+          <label for="physicist9" class="checkbox"><input type="checkbox" id="physicist9" name="physicist9" value="Rutherford">Ernest Rutherford</label>
+          <label for="physicist10" class="heisenberg"><input type="checkbox" id="physicist10" name="physicist10" value="Heisenberg">Werner Heisenberg</label>
+          <p class="comment">How Was Your Experience In This Website? (optional)</p>
+          <textarea id="comment" name="comment" placeholder="Enter Your Comment Here..." class="comment" rows="3" cols="50"></textarea>
+          <label for="submit"><a href="#"><input type="submit" id="submit" name="submit" class="submit"/></a></label>
+        </form>
+      </section>
+    </div>
+  </body>
+</html>
+
+
+
+
+body {
+  background-image: url(https://www.voicesofyouth.org/sites/voy/files/images/2020-08/physics-1-1024x576.jpg) ;
+  margin: 10px 10px;
+  padding: 10px 10px;
+}
+form {
+  display: center;
+  width: 70vw;
+	max-width: 500px;
+	min-width: 300px;
+  background-color: #505471;
+  opacity: 85%;
+  margin: 10px 10px;
+  padding: 10px 5px;
+}
+h1 {
+  margin-bottom: 5px;
+  font-size: 35px; 
+}
+.description {
+  font-family: san serif;
+  margin-bottom: 30px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+h1, .description {
+  text-align: center;
+}
+.label {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 10px 20px;
+  width: 100%;
+}
+.input {
+  width: 90%;
+  padding: 5px 10px;
+  font-size: 18px;
+  margin: 10px 20px;
+}
+.radio {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  margin: 10px 20px;
+}
+.rather-not-say {
+  color: #ffffff;
+  margin-bottom: 35px;
+  margin-left: 12px;
+}
+select {
+  width: 90%;
+  font-size: 18px;
+  margin: 10px 20px;
+  margin-top: 5px;
+  margin-bottom: 25px;
+  padding: 5px;
+}
+.select{
+  margin: 10px 20px;
+}
+.checkbox {
+  display: block;
+  color: #ffffff;
+  font-size: 18px;
+  margin-top: 8px;
+  margin: 10px 20px;
+}
+.heisenberg {
+  color: #ffffff;
+  display: block;
+  font-size: 18px;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  margin: 10px 20px;
+}
+h1, p {
+  color: #ffffff;
+}
+.submit {
+  font-size: 18px;
+  height: 2em;
+  color: #ffffff;
+  background-color: #009E60;
+  border-color: #505471;
+  width: 90%;
+  padding: 5px;
+  margin: 10px 20px;
+  0pacity: 100%;
+}
+p {
+  margin-top: 10px;
+  margin-bottom: 6px;
+  font-size: 18px;
+}
+.comment {
+  width: 90%;
+  font-size: 18px;
+  padding: 2px;
+  padding-left: 5px;
+  margin: 10px 20px;
+}
